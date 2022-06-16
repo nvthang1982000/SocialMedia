@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".Activity.StartActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/social_media" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="5"
+        android:text="Welcome to \n Social Media App"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_welcome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="5"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login"
+        android:layout_below="@id/txt_desc"
+        android:layout_marginTop="30dp"
+        android:gravity="bottom"
+        android:maxLines="5"
+        android:text="CONTINUE WITH:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Log in"
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        android:background="@drawable/button_backgroud"/>
+
+
+</RelativeLayout>
